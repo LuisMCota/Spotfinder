@@ -1,21 +1,27 @@
 # SpotFinder (Business Information Finder)
-Welcome to the Spotfinder repository! This web application is designed to assist users in finding general information about businesses located within a specified area. By utilizing the powerful "Places" API from Google Cloud, users can gather crucial data to aid in their decision-making process regarding potential business ventures.
+SpotFinder is a web application designed to assist users in finding general information about businesses within a specified area. By utilizing the "Places" API from Google Cloud, SpotFinder gathers relevant data on businesses around the user-specified location. This information can be instrumental in helping users assess the suitability of an area for starting a new business by identifying any potential issues or challenges.
 
 ## Features
-- Location-based Search: Users can specify a location or area of interest to retrieve information about businesses in that vicinity.
-- Comprehensive Data: The application gathers various details about businesses, including but not limited to ratings, reviews, and contact information.
-- Decision Support: Users can download the collected information for further analysis, helping them make informed decisions about starting a business in the specified area.
+- Business Information: SpotFinder provides users with essential information about businesses in the specified area, including their names, types, addresses, and contact details.
+- Data Analysis: Users can download the gathered information from the web application to perform further analysis. This allows users to make informed decisions about whether to proceed with establishing a business in the chosen area.
+-Google Cloud Integration: Leveraging the powerful "Places" API from Google Cloud ensures accurate and up-to-date business data for users.
+
 
 ## How to Use
-- Specify Location: Enter the desired location or area you're interested in exploring.
-- Retrieve Information: Click on the search button to fetch data about businesses in the specified area.
-- Analyze Results: Review the gathered information, including ratings, reviews, and contact details, to assess the business landscape.
+- Specify Location: Enter the desired location or area for which you want to find business information.
+- Retrieve Data: Click on the "Search" button to fetch data about businesses in the specified area.
+- Analyze: Review the information provided, download the data if necessary, and analyze it to make informed decisions about potential business opportunities in the area.
 - Download Data: If desired, download the information for offline analysis and decision-making.
 
-## Getting Started
-To get started with the Business Information Finder web application, follow these steps:
+## Technologies Used
+- Frontend: HTML, CSS, Tailwind
+- API: Google Cloud "Places" API
+- Python
 
-- Clone this repository to your local machine.
+## Getting Started
+To get started with the SpotFinder web application, follow these steps:
+
+- Clone this repository to your local computer.
 - Set up the necessary environment variables for the Google Cloud Places API.
 - Deploy the application to your preferred hosting platform.
 - Access the application through the deployed URL and start exploring business information!
@@ -29,4 +35,4 @@ This project is licensed under the UPY university.
 ## Contact
 For any inquiries or feedback, please contact Luis Monterrubio Cota for more information.
 
-Thank you for your interest in the Business Information Finder project (SpotFinder)! Happy exploring! 🚀
+Thank you for your interest in the project (SpotFinder)! Happy exploring! 🚀
