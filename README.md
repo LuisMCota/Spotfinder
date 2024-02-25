@@ -17,6 +17,7 @@ SpotFinder is a web application designed to assist users in finding general info
 - Frontend: HTML, CSS, Tailwind
 - API: Google Cloud "Places" API
 - Python
+- Docker
 
 ## Getting Started
 To get started with the SpotFinder web application, follow these steps:
