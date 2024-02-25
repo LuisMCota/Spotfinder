@@ -1,5 +1,5 @@
-# Business Information Finder
-Welcome to the Business Information Finder repository! This web application is designed to assist users in finding general information about businesses located within a specified area. By utilizing the powerful "Places" API from Google Cloud, users can gather crucial data to aid in their decision-making process regarding potential business ventures.
+# SpotFinder (Business Information Finder)
+Welcome to the Spotfinder repository! This web application is designed to assist users in finding general information about businesses located within a specified area. By utilizing the powerful "Places" API from Google Cloud, users can gather crucial data to aid in their decision-making process regarding potential business ventures.
 
 ## Features
 Location-based Search: Users can specify a location or area of interest to retrieve information about businesses in that vicinity.
