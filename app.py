@@ -1,5 +1,4 @@
 import tkinter as tk
-from tkinter import messagebox
 import requests
 
 GOOGLE_PLACES_API_KEY = 'AIzaSyAj0VJtl8C6oDTyJnIOqGjppUfTg0VeAO8'
