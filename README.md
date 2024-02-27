@@ -17,9 +17,9 @@ Preprocessing Data
 Load your text data into the DataProcessor class.
 Call preprocess_data to clean and normalize the text.
 Analyzing Sentiments
-The code take is divided in class, the first part reads the data, then it pays to be preprocessed and continues with the sentiment analysis that will pass through a machine learning model which one
-will do the sentiment analysis
-Documentation
+The code take is divided in class, the first part reads the data, then it pass to be preprocessed and continues with the sentiment analysis that will pass through a machine learning model which one will do the sentiment analysis deeper
+
+#### Documentation
 The documentation is detailed, covering all functions in the DataProcessor class. It includes:
 
 __init__(self, csv_path: str): Initializes the DataProcessor.
