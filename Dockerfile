@@ -1,10 +1,5 @@
 # Utiliza una imagen base de Python oficial
-FROM python:3.9-slim
-
-# Instala las dependencias necesarias para Tkinter
-RUN apt-get update && apt-get install -y \
-    tk \
-    && rm -rf /var/lib/apt/lists/*
+FROM python:3.8-slim-buster
 
 # Establece el directorio de trabajo dentro del contenedor
 WORKDIR /app
@@ -19,7 +14,7 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Expone el puerto en el que se ejecutará la aplicación
-EXPOSE 6000
+EXPOSE 5000
 
 # Comando para ejecutar la aplicación Flask
-CMD ["flask", "run", "--host=0.0.0.0", "--port=6000"]
+CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]

@@ -1,37 +1,24 @@
-import tkinter as tk
+from flask import Flask, request, render_template
 import requests
+
+app = Flask(__name__)
 
 GOOGLE_PLACES_API_KEY = 'AIzaSyAj0VJtl8C6oDTyJnIOqGjppUfTg0VeAO8'
 
+@app.route('/', methods=['GET', 'POST'])
+def home():
+    if request.method == 'POST':
+        query = request.form['query']
+        results = search_places(query)
+        return render_template('results.html', results=results)
+    return render_template('home.html')
 
-def search():
-    query = entry.get()
+def search_places(query):
     url = f"https://maps.googleapis.com/maps/api/place/textsearch/json?query={query}&key={GOOGLE_PLACES_API_KEY}"
     response = requests.get(url)
     data = response.json()
-    display_results(data['results'])
+    return data['results']
 
-def display_results(results):
-    results_text.delete('1.0', tk.END)
-    for result in results:
-        name = result['name']
-        address = result['formatted_address']
-        rating = result.get('rating', 'N/A')
-        results_text.insert(tk.END, f"{name}\n{address}\nRating: {rating}\n\n")
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000, debug=True)
 
-app = tk.Tk()
-app.title("Buscador de Lugares")
-
-label = tk.Label(app, text="Ingrese su búsqueda:")
-label.pack()
-
-entry = tk.Entry(app)
-entry.pack()
-
-button = tk.Button(app, text="Buscar", command=search)
-button.pack()
-
-results_text = tk.Text(app, height=15, width=50)
-results_text.pack()
-
-app.mainloop()

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultados</title>
+</head>
+<body>
+    <h1>Resultados de la búsqueda:</h1>
+    {% for result in results %}
+        <p><strong>{{ result.name }}</strong><br>
+        Dirección: {{ result.formatted_address }}<br>
+        Calificación: {{ result.get('rating', 'N/A') }}</p>
+    {% endfor %}
+    <a href="/">Nueva búsqueda</a>
+</body>
+</html>
