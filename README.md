@@ -11,7 +11,6 @@ SpotFinder is a web application designed to assist users in finding general info
 - Specify Location: Enter the desired location or area for which you want to find business information.
 - Retrieve Data: Click on the "Search" button to fetch data about businesses in the specified area.
 - Analyze: Review the information provided, download the data if necessary, and analyze it to make informed decisions about potential business opportunities in the area.
-- Download Data: If desired, download the information for offline analysis and decision-making.
 
 ## Technologies Used
 - Frontend: HTML, CSS, Tailwind
