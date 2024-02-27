@@ -27,7 +27,7 @@ To get started with the SpotFinder web application, follow these steps:
 ```cmd
 docker build -t app-flask .
 ```
-Afterwards, wrirte:
+Afterwards, write:
 ```cmd
 docker run -it -p 5000:5000 app-flask
 ```
