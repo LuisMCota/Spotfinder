@@ -23,9 +23,12 @@ To get started with the SpotFinder web application, follow these steps:
 -  Clone this repository to your local computer.
 -  Install Docker.
 - Set up your Docker account.
-- Open your terminal, locate your folder and writer the following commands:
+- Open your terminal, locate your folder and write the following commands:
 ```cmd
 docker build -t app-flask .
+```
+Afterwards, wrirte:
+```cmd
 docker run -it -p 5000:5000 app-flask
 ```
 After writing the commands on the terminal, your set up is all complete, just open up Docker, run it and click on the "5000:5000", or just type in your browser "localhost:5000" and you are all set up.
