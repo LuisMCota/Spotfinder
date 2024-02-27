@@ -18,13 +18,17 @@ SpotFinder is a web application designed to assist users in finding general info
 - Python
 - Docker
 
-## Getting Started
+# Getting Started
 To get started with the SpotFinder web application, follow these steps:
-
-- Clone this repository to your local computer.
-- Set up the necessary environment variables for the Google Cloud Places API.
-- Deploy the application to your preferred hosting platform.
-- Access the application through the deployed URL and start exploring business information!
+-  Clone this repository to your local computer.
+-  Install Docker.
+- Set up your Docker account.
+- Open your terminal, locate your folder and writer the following commands:
+```cmd
+docker build -t app-flask .
+docker run -it -p 5000:5000 app-flask
+```
+After writing the commands on the terminal, your set up is all complete, just open up Docker and click on the "5000:5000".
 
 ## Contributing
 Contributions to enhance the functionality, improve performance, or fix any bugs are highly appreciated! Feel free to fork this repository, make your changes, and submit a pull request. For major changes, please open an issue first to discuss the proposed modifications.
