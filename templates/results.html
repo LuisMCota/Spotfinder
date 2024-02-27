@@ -1,15 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Resultados</title>
+    <title>Resultados de la búsqueda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .result {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+        .result h2 {
+            margin-top: 0;
+            color: #007bff;
+        }
+        .result p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Resultados de la búsqueda:</h1>
-    {% for result in results %}
-        <p><strong>{{ result.name }}</strong><br>
-        Dirección: {{ result.formatted_address }}<br>
-        Calificación: {{ result.get('rating', 'N/A') }}</p>
-    {% endfor %}
-    <a href="/">Nueva búsqueda</a>
+    <div class="container">
+        <h1>Resultados de la búsqueda:</h1>
+        {% if results %}
+            {% for result in results %}
+                <div class="result">
+                    <h2>{{ result.name }}</h2>
+                    <p>Dirección: {{ result.formatted_address }}</p>
+                    <p>Calificación: {{ result.get('rating', 'N/A') }}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No se encontraron resultados.</p>
+        {% endif %}
+        <a class="back-link" href="/">Realizar otra búsqueda</a>
+    </div>
 </body>
 </html>
+
